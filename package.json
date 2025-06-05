@@ -1,35 +1,26 @@
 {
-  "name": "n8n-nodes-mtai-test-alter",
-  "version": "1.0.5",
-  "description": "Zalo chat bot",
+  "name": "n8n-nodes-mtaitestalter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodes/mtaiTestAlter/mtaiTestAlter.node.js",
   "scripts": {
-    "build": "tsc && gulp build:icons",
-    "dev": "tsc --watch",
-    "format": "prettier nodes credentials --write",
-    "lint": "eslint nodes credentials package.json",
-    "lintfix": "eslint nodes credentials package.json --fix",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "index.js",
   "n8n": {
-    "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/mtaiTestAlterApi.credentials.js"
-    ],
     "nodes": [
-      "dist/nodes/mtaiTestAlter/mtaiTestAlter.node.js"
+      "nodes/mtaiTestAlter/mtaiTestAlter.node.js"
     ]
   },
-  "devDependencies": {
-    "@types/node": "^22.15.29",
-    "typescript": "^5.8.3",
-    "n8n-workflow": "~0.118.0",
-    "n8n-core": "~0.165.0",
-    "eslint-plugin-n8n-nodes-base": "^1.16.0",
-    "gulp": "^4.0.2",
-    "prettier": "^2.8.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "eslint": "^8.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaiChat2022/n8n-nodes-mtaitestalter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TaiChat2022/n8n-nodes-mtaitestalter/issues"
+  },
+  "homepage": "https://github.com/TaiChat2022/n8n-nodes-mtaitestalter#readme"
 }
